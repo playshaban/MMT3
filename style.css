@@ -159,7 +159,7 @@
 }
 .search_box .main_child_body 
 {
-    align-items:flex-end;
+    align-items:center;
     min-height:fit-content;
     gap:20px;
 }
