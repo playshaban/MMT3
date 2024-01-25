@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMT3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+    <!-- parrent container will be responsible  -->
+    <div class="parrent_container">
+
+        <!-- data inside in main child container willbe of flex-column  -->
+        <div class="main_child_container banner">
+            <header class="main_child_header banner">
+                <div class="logo">
+                    <h1>Netflix</h1>
+                </div>
+            </header>
+            <div class="main_child_body banner_box">
+                <img src="images/bgimg1.jpeg" class="container_bg_img">
+                <div class="text_info">
+                    <h1 class="text_info_title">John Wick 3 : Parabellum</h1>
+                    <p class="text_info_para">
+                        John Wick is on the run after killing a member of the international assassins' guild, and with a
+                        $14 million price tag on his head, he is the target of hit men and women everywhere.
+                    </p>
+                    <a href="" class="default_navigate_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7.5547 5.16795C7.24784 4.96338 6.8533 4.94431 6.52814 5.11833C6.20298 5.29235 6 5.63121 6 6V10C6 10.3688 6.20298 10.7077 6.52814 10.8817C6.8533 11.0557 7.24784 11.0366 7.5547 10.8321L10.5547 8.83205C10.8329 8.64659 11 8.33435 11 8C11 7.66565 10.8329 7.35342 10.5547 7.16795L7.5547 5.16795Z"
+                                fill="white" />
+                        </svg>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- search result box -->
+        <div class="main_child_container search_box">
+            <div class="main_child_header ">
+                <form id="search_form" action="">
+                    <input type="text" value="What do you want to watch?">
+                    <button for="search_form" class="search_btn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14 14L10 10M11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </form>
+            </div>
+            <div class="main_child_body">
+                <img src="images/Thumbnails.png" width="400px">
+                <div class="text_info">
+                    <h1 class="text_info_title">John Wick 3 : Parabellum</h1>
+                    <span class="text_catagory"> Animation, Action, Adventure, Fantasy, Drama</span>
+                    <p class="text_info_para">
+                        Release Date: 12/08/2000 <br>
+                        In 1970s London amidst the punk rock revolution, a young grifter named Estella is determined to
+                        make a name for herself with her designs.
+                        She befriends a pair of young thieves who appreciate her appetite for mischief, and together
+                        they are able to build a life for themselves on the London streets.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main_child_container search_box movie_not_found">
+            <div class="main_child_body">
+                <img src="images/Thumbnails.png" width="400px">
+                <div class="text_info">
+                    <h1 class="text_info_title">Movie Title</h1>
+                    <span class="text_catagory"> Catagory</span>
+                    <p class="text_info_para">
+                        Release Date <br>
+                        Description
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- recommended box -->
+        <div class="main_child_container carousel_gallery">
+            <div class="main_child_header ">
+                <h1>Recommended Movies</h1>
+            </div>
+            <div class="slider_container_box">
+                <section class="splide is-initialized splide--slide splide--ltr splide--draggable is-active"
+                    aria-label="Splide Basic HTML Example" id="splide01" aria-roledescription="carousel">
+                    <div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev"
+                            type="button" disabled="" aria-label="Previous slide" aria-controls="splide01-track"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg></button><button class="splide__arrow splide__arrow--next" type="button"
+                            aria-label="Next slide" aria-controls="splide01-track"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg></button></div>
+                    <div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+                        id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite"
+                        aria-atomic="true">
+                        <ul class="splide__list movie_array" id="splide01-list" role="presentation"
+                            style="transform: translateX(0px);">
+
+                            <!-- recommedation will arrive here -->
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Favorite movie box -->
+        <div class="main_child_container carousel_gallery  favorite_box_content">
+            <div class="main_child_header ">
+                <h1>Favorites List</h1>
+                <select name="sort" id="">
+                    <option value="date">Sort</option>
+                    <option value="date">By Date</option>
+
+                </select>
+            </div>
+            <div class="slider_container_box">
+                <section class="splide is-initialized splide--slide splide--ltr splide--draggable is-active"
+                    aria-label="Splide Basic HTML Example" id="splide02" aria-roledescription="carousel">
+                    <div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev"
+                            type="button" disabled="" aria-label="Previous slide" aria-controls="splide01-track"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg></button><button class="splide__arrow splide__arrow--next" type="button"
+                            aria-label="Next slide" aria-controls="splide01-track"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg></button></div>
+                    <div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+                        id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite"
+                        aria-atomic="true">
+                        <ul class="splide__list wish_array" id="splide01-list" role="presentation"
+                            style="transform: translateX(0px);">
+
+
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+
+        let wishArray = JSON.parse(localStorage.getItem('wishArray')) || [];
+
+        function saveWishArrayToLocalStorage() {
+            localStorage.setItem('wishArray', JSON.stringify(wishArray));
+        }
+
+        const generes = [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 99,
+                "name": "Documentary"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 36,
+                "name": "History"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 10402,
+                "name": "Music"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 10749,
+                "name": "Romance"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 10770,
+                "name": "TV Movie"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 10752,
+                "name": "War"
+            },
+            {
+                "id": 37,
+                "name": "Western"
+            }
+        ];
+
+
+
+        async function fetchData() {
+            const url = 'https://api.themoviedb.org/3/trending/all/day?language=en-US';
+            const options = {
+                method: 'GET',
+                headers: {
+                    accept: 'application/json',
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlOTE0MjA5ODg3NTNhZGMxNzYwOGNmZDQ3ZjI4ZWM3YSIsInN1YiI6IjY1YjIzMzFmMWM2MzI5MDE4NDkzOWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.89ZKFvyPYmTtk-ch4Qhw9WwMqugzqhfA2JrNgj1fO4c',
+                },
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const movieList = await response.json();
+                console.log(movieList);
+                let movieHTML = '';
+                movieList.results.forEach((curr) => {
+
+                    const movieGenres = curr.genre_ids.map(genreId => {
+                        const genre = generes.find(genre => genre.id === genreId);
+                        return genre ? genre.name : 'Unknown Genre';
+                    }).join(', ');
+
+                    // Check if the movie is already in wishArray
+                    const isAlreadyInWishlist = wishArray.some(movie => movie.id === curr.id);
+
+                    // Skip the movie if it's already in the wishlist
+                    if (isAlreadyInWishlist) {
+                        return;
+                    }
+
+                    movieHTML += `<li class="splide__slide" data-movieId="${curr.id}" >
+                                    <div class="wishlist" onclick="addWish(${curr.id})">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                            fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.17157 1.48284C2.73367 -0.0381453 5.26633 -0.0381453 6.82842 1.48284L7.99999 2.62359L9.17157 1.48284C10.7337 -0.0381453 13.2663 -0.0381453 14.8284 1.48284C16.3905 3.00383 16.3905 5.46984 14.8284 6.99083L7.99999 13.6396L1.17157 6.99083C-0.390524 5.46984 -0.390524 3.00383 1.17157 1.48284Z"
+                                                fill="#D1D5DB" />
+                                        </svg>
+                                    </div>
+                                    <img src="https://media.themoviedb.org/t/p/w220_and_h330_face${curr.poster_path}" alt="" loading="lazy" />
+                                    <div class="movie_info_box">
+                                        <p class="movie_title">
+                                            ${curr.original_title}
+                                        </p>
+                                        <p class="movie_gener">
+                                            ${movieGenres}
+                                        </p>
+
+                                    </div>
+                                </li>`;
+                });
+
+                var splide = new Splide("#splide01", {
+                    type: "slide",
+                    perPage: 4,
+                    start: 0,
+                    perMove: 1,
+                    gap: "2rem",
+                    drag: "free",
+                    pagination: false,
+                    breakpoints: {
+                        768: {
+                            perPage: 1,
+                        },
+                    },
+                });
+                document.querySelector('.movie_array').innerHTML = movieHTML;
+                splide.mount();
+
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        fetchData();
+
+
+
+        async function addWish(movieId) {
+            // Check if the movieId is already in the wishArray
+            const isAlreadyInWishlist = wishArray.some(movie => movie.id === movieId);
+
+            if (!isAlreadyInWishlist) {
+                const movieDetails = await fetchMovieDetails(movieId);
+
+                if (movieDetails) {
+                    wishArray.push(movieDetails);
+                    console.log('Added to wishArray:', movieDetails);
+                    generateWishList();
+                    saveWishArrayToLocalStorage();
+                    location.reload();
+                }
+            } else {
+                alert('Movie is already in the wishlist.');
+                // You can optionally display an alert or provide user feedback.
+            }
+        }
+
+        async function removeWish(movieId) {
+            const indexToRemove = wishArray.findIndex(movie => movie.id === movieId);
+
+            if (indexToRemove !== -1) {
+                wishArray.splice(indexToRemove, 1);
+                generateWishList();
+                saveWishArrayToLocalStorage();
+                fetchData();
+            }
+        }
+
+
+
+        async function fetchMovieDetails(movieId) {
+            const url = `https://api.themoviedb.org/3/movie/${movieId}?language=en-US`;
+            const options = {
+                method: 'GET',
+                headers: {
+                    accept: 'application/json',
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlOTE0MjA5ODg3NTNhZGMxNzYwOGNmZDQ3ZjI4ZWM3YSIsInN1YiI6IjY1YjIzMzFmMWM2MzI5MDE4NDkzOWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.89ZKFvyPYmTtk-ch4Qhw9WwMqugzqhfA2JrNgj1fO4c',
+                },
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const movieDetails = await response.json();
+                return movieDetails;
+            } catch (error) {
+                console.error('Error fetching movie details:', error);
+                return null;
+            }
+        }
+
+
+
+
+
+        function generateWishList() {
+            let movieHTML = '';
+            //console.log(wishArray);
+
+            if(wishArray.length==0)
+            {
+                document.querySelector('.favorite_box_content').style.display ="none";
+            }
+
+            document.querySelector('.favorite_box_content').style.display ="flex";
+
+            wishArray.forEach((curr) => {
+                // const movieGenres = curr.genre_ids.map(genreId => {
+                //     const genre = generes.find(genre => genre.id === genreId);
+                //     return genre ? genre.name : 'Unknown Genre';
+                // }).join(', ');
+
+                movieHTML += `<li class="splide__slide favorite_box">
+                                <div class="wishlist" onclick="removeWish(${curr.id})">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                        fill="red">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.17157 1.48284C2.73367 -0.0381453 5.26633 -0.0381453 6.82842 1.48284L7.99999 2.62359L9.17157 1.48284C10.7337 -0.0381453 13.2663 -0.0381453 14.8284 1.48284C16.3905 3.00383 16.3905 5.46984 14.8284 6.99083L7.99999 13.6396L1.17157 6.99083C-0.390524 5.46984 -0.390524 3.00383 1.17157 1.48284Z"
+                                            fill="red" />
+                                    </svg>
+                                </div>
+                                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face${curr.poster_path}" alt="" loading="lazy" />
+                                <div class="movie_info_box">
+                                    <p class="movie_title">
+                                        ${curr.original_title}
+                                    </p>
+                                    <p class="movie_gener">
+                                        movieGenres
+                                    </p>
+                                </div>
+                            </li>`;
+            });
+            var splide2 = new Splide("#splide02", {
+                type: "slide",
+                perPage: 4,
+                start: 0,
+                perMove: 1,
+                gap: "2rem",
+                drag: "free",
+                pagination: false,
+                breakpoints: {
+                    768: {
+                        perPage: 1,
+                    },
+                },
+            });
+
+            document.querySelector('.wish_array').innerHTML = movieHTML;
+            splide2.mount();
+        }
+
+
+
+        generateWishList();
+
+    </script>
+</body>
+
+</html>
