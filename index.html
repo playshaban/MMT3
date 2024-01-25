@@ -108,6 +108,7 @@
                         <ul class="splide__list movie_array" id="splide01-list" role="presentation"
                             style="transform: translateX(0px)">
                             <!-- recommedation will arrive here -->
+                            <h1 style="text-align: center; margin:0 auto;"> No Data Found </h1>
                         </ul>
                     </div>
                 </section>
@@ -118,7 +119,7 @@
         <div class="main_child_container carousel_gallery favorite_box_content">
             <div class="main_child_header">
                 <h1>Favorites List</h1>
-                <select name="sort" id="">
+                <select name="sort" onchange="sortWishArray()" id="">
                     <option value="date">Sort</option>
                     <option value="date">By Date</option>
                 </select>
@@ -377,12 +378,14 @@
             }
         }
 
+        const favorite_box = document.querySelector(".favorite_box_content");
+
         function generateWishList() {
             let movieHTML = "";
             //console.log(wishArray);
 
             if (wishArray.length == 0) {
-                document.querySelector(".favorite_box_content").style.display ="none";
+                favorite_box.style.display = "none";
             }
 
             document.querySelector(".favorite_box_content").style.display = "flex";
@@ -437,9 +440,7 @@
         //handling search
 
         const form = document.querySelector("#search_form");
-        //const movieNotFound = document.querySelector('.movie_not_found');
-        //const movieFound = document.querySelector('.movie_found');
-        //movieFound.style.display = "none";
+
 
         form.onsubmit = async (e) => {
             e.preventDefault();
@@ -498,6 +499,21 @@
                 }
             }
         };
+
+
+        function sortWishArray() {
+            let storedWishArray = JSON.parse(localStorage.getItem("wishArray")) || [];
+
+            // Sort the array by id
+            storedWishArray.sort((a, b) => a.id - b.id);
+
+            // Save the sorted array back to localStorage
+            localStorage.setItem("wishArray", JSON.stringify(storedWishArray));
+
+            // Optional: Update the displayed wish list
+            generateWishList();
+        }
+
     </script>
 </body>
 
